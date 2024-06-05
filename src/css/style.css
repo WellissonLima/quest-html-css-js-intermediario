@@ -1,0 +1,93 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #c5c5c5;
+}
+
+.contato-duvidas{
+    background-image: url(../images/bg-gradiente.jpg);
+    background-size: contain;
+    width: 800px;
+    height: 400px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 12px 50px;
+}
+
+.container .contato-duvidas .informacao{
+    max-width: 300px;
+    height: auto;
+    color: #fff;
+}
+
+.container .contato-duvidas .informacao .titulo{
+    font-size: 20px;
+    font-weight: 900;
+    text-transform: uppercase;
+    padding-bottom: 11px;
+}
+
+.container .contato-duvidas .informacao .texto{
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.container .contato-duvidas .formulario{
+    background-color: #fff;
+    width: 340px;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.container .contato-duvidas .formulario input{
+    border-radius: 5px;
+    height: 35px;
+    font-weight: 400;
+}
+
+.container .contato-duvidas .formulario .mensagem{
+    border-radius: 5px;
+    height: 100px;
+}
+
+.container .contato-duvidas .formulario .mensagem::placeholder{
+    text-align: left;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+.container .contato-duvidas .formulario .msg-aviso{
+    font-size: 15px;
+    font-weight: 400;
+    padding-bottom: 20px;
+    padding-top: 7px;
+}
+
+.btn-enviar{
+    max-width: 300px;
+    height: 42px;
+    background-color: #3ccc87;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.borda-verde{
+    border: 1px solid #00c22b;
+}
+
+.borda-vermelha{
+    border: 1px solid #f52e2e;
+}
