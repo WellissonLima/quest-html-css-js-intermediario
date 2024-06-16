@@ -74,6 +74,17 @@
     padding-top: 7px;
 }
 
+.msg-error{
+    font-size: 8px;
+    color: #f52e2e;
+    text-align: right;
+    display: none;
+}
+
+.mostrar{
+    display: block;
+}
+
 .btn-enviar{
     max-width: 300px;
     height: 42px;

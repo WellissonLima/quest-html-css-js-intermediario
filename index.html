@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" href="./src/css/reset.css">
     <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/responsivo.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,12 +31,16 @@
     
             <div class="formulario">
                 <input type="text" name="nome-completo" placeholder=" Nome completo *" class="input-contato" />
+                <span class="msg-error">Campo obrigatório</span>
                 <br>
                 <input type="email" name="email" placeholder=" Email *" class="input-contato" />
+                <span class="msg-error">Campo obrigatório</span>
                 <br>
                 <input type="tel" name="telefone" placeholder=" Telefone *" class="input-contato" />
+                <span class="msg-error">Campo obrigatório</span>
                 <br>
                 <input type="text" placeholder="Mensagem *" name="mensagem" class="input-contato mensagem">
+                <span class="msg-error">Campo obrigatório</span>
                 <p class="msg-aviso">*campos obrigatórios</p>
                 <button type="submit" id="enviar" class="btn-enviar">Enviar</button>
             </div>

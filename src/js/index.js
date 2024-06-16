@@ -1,33 +1,22 @@
 const meusInputs = document.querySelectorAll(".input-contato");
 const btnEnviar = document.getElementById("enviar");
 
-btnEnviar.addEventListener("click", function () {
-    meusInputs.forEach(meuInput => {
-        let mensagemDeErro = meuInput.nextElementSibling;
+btnEnviar.addEventListener("click", (e) => {
+    e.preventDefault();
+    meusInputs.forEach((input) => {
 
-        if (meuInput.value !== "") {
-            meuInput.classList.add("borda-verde");
-            meuInput.classList.remove("borda-vermelha");
+        if (input.value) {
+            input.classList.add("borda-verde");
+            input.classList.remove("borda-vermelha");
+            input.nextElementSibling.classList.remove("mostrar");
 
-            if (mensagemDeErro && mensagemDeErro.classList.contains('msg-erro')) {
-                mensagemDeErro.remove();
-            }
         } else {
-            meuInput.classList.add("borda-vermelha");
-            meuInput.classList.remove("borda-verde");
+            input.classList.remove("borda-verde");
+            input.classList.add("borda-vermelha");
 
-            if (!mensagemDeErro || !mensagemDeErro.classList.contains('msg-erro')) {
-                const span = document.createElement('span');
-                span.classList.add('msg-erro');
-                span.style.color ='#f52e2e';
-                span.style.fontSize = '8px'
-                span.textContent = 'campo obrigatório';
-
-                meuInput.parentNode.insertBefore(span, meuInput.nextElementSibling);
-            }
+            input.nextElementSibling.classList.add("mostrar");
         }
     });
-
-})
+});
 
 
